@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>KirchKnopf</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:100,400,600,700,800|Patua+One&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link rel="stylesheet" href="animate.css">
+	<script src="wow.min.js"></script>
+ <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+
+$(function() {
+
+ $(window).scroll(function() {
+
+ if($(this).scrollTop() != 0) {
+
+ $('#toTop').fadeIn();
+ 
+ } else {
+
+ $('#toTop').fadeOut();
+
+ }
+
+ });
+ 
+ $('#toTop').click(function() {
+
+ $('body,html').animate({scrollTop:0},800);
+
+ });
+ 
+});
+
+</script>
+
+	<script type="text/javascript">
+	 $(document).ready(function(){
+			$("#menu").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+		</script>
+		<script type="text/javascript">
+	 $(document).ready(function(){
+			$("#menu1").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+		</script>
+		
+		<script>
+			function f()
+				{
+				var el=document.getElementById("navbar");
+					if(el.style.display!='block')
+					{
+						el.style.display ='block'
+					}
+					else{el.style.display ='none'}
+				}
+		
+	</script>
+	<script type="text/javascript">
+	var visible = true;
+	function showFun() {
+	    if(visible) {
+	        document.getElementById('menu1' ).style.display = 'block';
+	        visible = false;
+	    } else {
+	        document.getElementById('menu1' ).style.display = 'none';
+	        visible = true;
+	    }
+	}
+</script>
+</head>
+<body>
+	<header>
+		<div class="bar" onclick="showFun()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<div id="menu1">
+					<ul><a href="#Über" onclick="document.getElementById('menu1').style.display='none'"><li>Über uns</li></a>
+						<a href="#Service" onclick="document.getElementById('menu1').style.display='none'"><li>Leistungen</li></a>
+						<a href="#Portfolio" onclick="document.getElementById('menu1').style.display='none'"><li>Portfolio</li></a>
+						<a href="#Impression" onclick="document.getElementById('menu1').style.display='none'"><li>Impressum</li></a>
+						<a href="#Kontakte" onclick="document.getElementById('menu1').style.display='none'"><li>Kontakt</li></a>
+
+					</ul>
+				</div>
+		
+		<figure><a href="#home"><img src="img/logo_vector.svg" alt=""></a></figure>
+		
+		<nav>
+			
+			<div class="link">
+				<a >
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<span>Mo - Fr: 8.00 - 18.00</span>
+				</a>
+				<a >
+					<i class="fa fa-phone-square" aria-hidden="true"></i>
+					<span>+43 664 2305231</span>
+				</a>
+				<span><a >
+					<i class="fa fa-phone-square" aria-hidden="true"></i>
+					 + 01/749 28 29 (-30)
+				</a></span>
+				<a >
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<span>rudolfkirchknopf@aon.at</span>
+				</a>
+			</div>
+		</nav>
+		<menu>
+			<nav>
+				<div id="menu">
+					<ul>
+						<a href="#Kontakte"><li>Kontakt</li></a>
+						<a href="#Impressum"><li>Impressum</li></a>
+						<a href="#Portfolio"><li>Portfolio</li></a>
+						<a href="#Über"><li>Über uns</li></a>
+						<a href="#Leistungen"><li>Leistungen</li></a>
+					</ul>
+				</div>
+			</nav>
+		
+		</menu>
+	</header>
+	<section class="fon" id="home">
+		<h3 class="wow bounceIn">Das Leben beginnt an dem Tag,</h3>
+		<h1 class="wow bounceIn">an dem man einen Garten anlegt</h1>
+		<h5 class="wow fadeIn">Sprichwort aus China</h5>
+		<!-- <button>read more</button> -->
+		<input type="submit" value="Anfrage" onclick="getElementById('form').style.display='block'">
+		<div id="form">
+			<form action="">
+				<p class="kontaktdaten">kontaktdaten</p>
+				<p class="close1" onclick="getElementById('form').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+			
+				<p>
+					<label for=""><input type="checkbox"> Herr</label>
+					<label for=""><input type="checkbox"> Frau</label>
+					<label for=""><input type="checkbox"> Firma</label>
+				</p>
+				
+				<p>
+					<input type="text" placeholder="Vorname bzw. Ansprechpartner">
+					<input type="text" placeholder="Nachname bzw. Firma">
+					
+					<input type="text" placeholder="Mobil">
+					<input type="text" placeholder="E-mail">
+				
+				<span>Adresse des Bauvorhabens:</span>
+					<input type="text" placeholder="Straße">
+					<input type="text" placeholder="Hausnr">
+				
+				</p>	
+				<p class="bt">
+					<input type="submit" value="Absenden" name="" id="">
+				</p>
+			</form>
+		</div>
+	</section>
+	<section class="service-offer" id="Service">
+		<h1 class="wow zoomIn">Leistungen</h1>
+		<img class="topimg" src="img/logo2.svg" alt="" class="animated zoomIn" >
+		<nav class="box_service">
+
+			<!-- -----------primer----------- -->
+			<div class="box_offer_mob">
+				<details>
+				<summary><img src="img/logo2.svg" alt="">
+				<h5>Gartenplanung</h5></summary>
+					<h3>Die optimale Planung</h3>
+					<p>Eine gute Planung spart von Anfang an viel Zeit und Energie bei der Anlage des Gartens. Ebenso ermöglicht sie die optimale Nutzung desselben.<br><br>
+				Da nicht jeder über das notwendige Wissen und den gewissen grünen Daumen verfügt, ist es oft brsinnvoll die Planung einem professionellen Gartengestalter zu überlassen.<br><br>
+				Wir stehen daher gerne für eine Beratung und die anschließende Planung des für Ihre individuellen Bedürfnisse idealen Gartens zur Verfügung.<br><br>
+				Rufen Sie uns an und vereinbaren Sie einen Termin!</p>
+				</details>
+			</div>
+
+	
+			<div class="box_offer_mob">
+				<details>
+					<summary><img src="img/logo2.svg" alt=""><h5>Gartengestaltung</h5></summary>
+				
+					<h3>Die Gestaltung verrät viel</h3>
+				<p>Ein Garten ist nicht nur eine bepflanzte Fläche. Genauso einzigartig wie Sie, ist auch Ihr Garten ein Individuum. Seine Gestaltung verrät viel über die Persönlichkeit der BesitzerInnen.<br><br>
+				Ziehen Sie gerade Linien und strenge Formen vor, oder spricht Sie ein romantisches und verspieltes Erscheinungsbild mit geschwungenen Konturen und ineinander übergreifenden Strukturen eher an? Und des weiteren: welchen Zweck soll die Fläche erfüllen. Soll sie eher der Repräsentation oder der Erholung dienen?<br><br>
+				Der Stil des Gartens sollte sich jedoch nicht zu sehr von jenem der damit verbundenen Baulichkeiten unterscheiden.
+				Die Gestaltung ist dann gelungen, wenn sich Haus, Garten und letztendlich seine NutzerInnen zu einem harmonischen Ganzen zusammenfügen.</p>
+				</details>
+			</div>
+			
+			<div class="box_offer_mob">
+				<details>
+				<summary><img src="img/logo2.svg" alt=""><h5>Gestaltung</h5></summary>
+				<h3>Teichbau</h3>
+				<p>Wasser im Garten ist in unserer hektischen Welt ein besonders reizvolles Element. Es beruhigt und belebt gleichermaßen.<br><br>
+				Um mit einem Gartenteich auch die gewünschte Freude und Entspannung genießen zu können, bedarf es einigen fachlichen Wissens. Sonst kann es sein, dass die gewünschte Erholung in Arbeit ausartet.<br><br>
+				Auch wenn der eigene Garten noch so klein ist, muss trotzdem nicht ganz auf das blaue Wunder verzichtet werden. Die optimale Nutzung des zur Verfügung stehenden Raumes und die passende Platzierung macht es möglich. <br><br>
+				Nützen Sie unsere langjährige Erfahrung und beauftragen uns mit dem Bau bzw. der Pflege Ihres Teiches!
+				</p><br>	
+				<h3>Dachgarten</h3>
+				<p>Dachgärten erfreuen sich aufgrund des meist bestehenden Platzmangels im städtischen Bereich immer größerer Beliebtheit.<br><br>
+				Dabei sind neben der Dachneigung zahlreiche andere Faktoren in Betracht zu ziehen. Das Gewicht des für die Bepflanzung notwendigen Erdmaterials erreicht aufgrund der Wasserspeicherung bei Regenfällen bald die Grenzen der Belastbarkeit. Auch Pflanzgefäße und nicht zuletzt die Pflanzen selbst bringen einiges auf die Waage. Wenn es schon nicht möglich ist, einen begehbaren Dachgarten anzulegen, so kann eventuell jedoch eine extensive Begrünung der Dachfläche erfolgen.<br><br>
+				Wir überprüfen, ob und welche Möglichkeiten zur Anlage eines Dachgartens für Sie vorhanden sind und falls ja, übernehmen wir gerne Ihren Auftrag für die Verwirklichung desselben.</p>
+				</details>
+			</div>
+		
+			<div class="box_offer_mob">
+				<details>
+					<summary><img src="img/logo2.svg" alt=""><h5>Grünflächenpflege</h5></summary>
+				<h3>Gepflegte Grünflächen sind attraktiver</h3>
+				<p>Wir betreuen nicht nur Privatgärten, sondern auch größere gemeinschaftliche Grünflächen in Wohnhausanlagen und Betrieben über den Jahresverlauf hindurch.<br><br>
+				Wenn schon kein eigener Garten zur Verfügung steht, so tragen die zu einer Wohnhausanlage gehörenden Grünflächen doch massiv zu einer Aufwertung der dort vorhandenen Lebensqualität bei. Über den Erholungswert entscheidet jedoch nicht nur die Größe und Gestaltung der Grünfläche, sondern auch deren jeweiliger Pflegezustand.<br><br>
+				Im Laufe des Jahres fallen daher umfangreiche Pflegearbeiten an.
+				Wir bieten eine professionelle, verlässliche Grünflächenbetreuung das ganze Jahr hindurch.
+				</p><br>
+				<h3>Winterdienst</h3>
+				<p>Im Gegensatz zu den Pflanzen, die ihre verdiente Winterruhe halten, sind wir auch in der kalten Jahreszeit aktiv.<br><br>
+				Wir kümmern uns für unsere KundInnen darum, dass Wege und befahrbare bzw. begangene Flächen auf deren Grundstücken schnee- und eisfrei gehalten werden.<br><br>
+				Im Rahmen der Beauftragung mit dem Winterdienst stehen wir Tag und Nacht für die Schneeräumung auf den jeweiligen Flächen zur Verfügung.
+				</p>
+				</details>
+			</div>
+	
+			
+			<div class="box_offer_mob">
+				<details>
+					<summary><img src="img/logo2.svg" alt=""><h5>Baumpflege</h5></summary>
+				<h3>Baumgutachten</h3>
+				<p>Bäume sind eine wunderbare Bereicherung von Grünflächen und Gärten. Was wäre denn ein Garten ohne Hausbaum.<br><br>
+				Leider können große Bäume, die nahe an Gebäuden oder viel begangenen Orten stehen auch zu einer Gefahrenquelle werden.<br><br>
+				Wenn schon keine Personen betroffen sind, so kann ein heruntergestürzter Ast aber auch einen enormen finanziellen Schaden anrichten. <br><br>
+				Wir verfügen über die langjährige Erfahrung und das umfangreiche Know-how, um Ihnen die Frage nach der Baumsicherheit im Rahmen eines Baumgutachtens beantworten zu können.
+				</p><br>	
+				<h3>Baumschnitt</h3>
+				<p>Dem Baum- und Strauchschnitt kommt in der Gartenpflege eine besondere Bedeutung zu. Er kann dazu beitragen, die Pflanzen länger vital und blühfreudig zu halten bzw. beim Obst für einen langen und qualitativ hochwertigen Ertrag zu sorgen.<br><br>
+				Jedoch: Baum ist nicht gleich Baum und Strauch ist nicht gleich Strauch. Und so ist einiges Know-how und langjährige Erfahrung vonnöten, um jeder Pflanze die für sie passendee Schnitttechnik zum optimalen Schnittzeitpunkt zuteil werden zu lassen.<br><br>
+				Profitieren Sie von unserem Know-how und überlassen Sie uns den Schnitt!
+				</p>
+				</details>
+			</div>
+	
+			
+			<div class="box_offer_mob">
+				<details>
+					<summary><img src="img/logo2.svg" alt=""><h5>Pflanzenschutz</h5></summary>
+					<h3>Pflanzenschutz</h3>
+				<p>Nur gesunde Pflanzen können ihre volle Schönheit und Einzigartigkeit entfalten. In der Natur sind sie jedoch zahlreichen Belastungen ausgesetzt.<br><br>
+				Leider wurden in letzter Zeit auch einige Schädlinge, eingeschleppt, die hier keine natürlichen Feinde haben, aber auch Pilze und Viruserkrankungen setzen der Vegetation zu.<br><br>
+				Um es gar nicht soweit kommen zu lassen, können schon im Vorfeld zahlreiche Maßnahmen wie u. a. eine optimale Düngung getroffen werden. Kommt es aber trotzdem einmal zu Anzeichen für einen Schädlingsbefall oder eine Erkrankung, muss das jeweils adäquate Pflanzenschutzmittel bzw. die Chemie gezielt zum Einsatz kommen. Da vor allem der Umgang mit chemischen Pflanzenschutzmitteln eher heikel ist und um nicht den gegenteiligen Effekt zu erzielen, ist hier höchste Vorsicht geboten. Die Anwendung dieser Präparate sollte daher eher Profis überlassen werden.
+				Wir stellen die richtige Diagnose und wenden den jeweils adäquaten Pflanzenschutz an.
+				</p>
+				</details>
+			</div>
+			<!-- ----------- end primer----------- -->
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close1').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Gartenplanung</h5>
+				<p>Eine gute Planung spart von Anfang an viel Zeit...</p>
+				<!-- <button onclick="getElementById('close1').style.display='block'">mehr erfahren</button> -->
+			</div>
+			<!-- ----- -->
+			<div class="box_text_hover" id="close1">
+				<p class="clo" href="" onclick="getElementById('close1').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="b"><div class="box_img"><img src="img/1.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Beratung</h5>
+				<p></p></div></div>
+
+				<div class="box_img"><img src="img/plan.PNG" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Die optimale Planung</h5>
+				<p>Eine gute Planung spart von Anfang an viel Zeit und Energie bei der Anlage des Gartens. Ebenso ermöglicht sie die optimale Nutzung desselben.<br><br>
+				Da nicht jeder über das notwendige Wissen und den gewissen grünen Daumen verfügt, ist es oft brsinnvoll die Planung einem professionellen Gartengestalter zu überlassen.<br><br>
+				Wir stehen daher gerne für eine Beratung und die anschließende Planung des für Ihre individuellen Bedürfnisse idealen Gartens zur Verfügung.<br><br>
+				Rufen Sie uns an und vereinbaren Sie einen Termin!</p></div>
+			</div>
+
+
+
+			<div class="box_offer wow zoomIn"  onclick="getElementById('close2').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Gartengestaltung</h5>
+			<p>Ein Garten ist nicht nur eine bepflanzte Fläche. Genauso...</p>
+			<!-- <button onclick="getElementById('close2').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close2">
+				<p class="clo" href="" onclick="getElementById('close2').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="b"><div class="box_img"><img src="img/1_1.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Die Gestaltung verrät viel</h5>
+				<p>Ein Garten ist nicht nur eine bepflanzte Fläche. Genauso einzigartig wie Sie, ist auch Ihr Garten ein Individuum. Seine Gestaltung verrät viel über die Persönlichkeit der BesitzerInnen.<br><br>
+				Ziehen Sie gerade Linien und strenge Formen vor, oder spricht Sie ein romantisches und verspieltes Erscheinungsbild mit geschwungenen Konturen und ineinander übergreifenden Strukturen eher an? Und des weiteren: welchen Zweck soll die Fläche erfüllen. Soll sie eher der Repräsentation oder der Erholung dienen?<br><br>
+				Der Stil des Gartens sollte sich jedoch nicht zu sehr von jenem der damit verbundenen Baulichkeiten unterscheiden.
+				Die Gestaltung ist dann gelungen, wenn sich Haus, Garten und letztendlich seine NutzerInnen zu einem harmonischen Ganzen zusammenfügen.</p></div></div>
+				<div class="b"><div class="box_img"><img src="img/1_2.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Rasen</h5>
+				<p></p></div></div>
+
+			</div>
+
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close3').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Gestaltung</h5>
+			<p>Wasser im Garten ist in unserer hektischen Welt ein...</p>
+			<!-- <button onclick="getElementById('close3').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close3">
+				<p class="clo" href="" onclick="getElementById('close3').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="b"><div class="box_img"><img src="img/1_3.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Teichbau</h5>
+				<p>Wasser im Garten ist in unserer hektischen Welt ein besonders reizvolles Element. Es beruhigt und belebt gleichermaßen.<br><br>
+				Um mit einem Gartenteich auch die gewünschte Freude und Entspannung genießen zu können, bedarf es einigen fachlichen Wissens. Sonst kann es sein, dass die gewünschte Erholung in Arbeit ausartet.<br><br>
+				Auch wenn der eigene Garten noch so klein ist, muss trotzdem nicht ganz auf das blaue Wunder verzichtet werden. Die optimale Nutzung des zur Verfügung stehenden Raumes und die passende Platzierung macht es möglich. <br><br>
+				Nützen Sie unsere langjährige Erfahrung und beauftragen uns mit dem Bau bzw. der Pflege Ihres Teiches!
+				</p></div></div>
+				<div class="b"><div class="box_img"><img src="img/1_3_2.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Dachgarten</h5>
+				<p>Dachgärten erfreuen sich aufgrund des meist bestehenden Platzmangels im städtischen Bereich immer größerer Beliebtheit.<br><br>
+				Dabei sind neben der Dachneigung zahlreiche andere Faktoren in Betracht zu ziehen. Das Gewicht des für die Bepflanzung notwendigen Erdmaterials erreicht aufgrund der Wasserspeicherung bei Regenfällen bald die Grenzen der Belastbarkeit. Auch Pflanzgefäße und nicht zuletzt die Pflanzen selbst bringen einiges auf die Waage. Wenn es schon nicht möglich ist, einen begehbaren Dachgarten anzulegen, so kann eventuell jedoch eine extensive Begrünung der Dachfläche erfolgen.<br><br>
+				Wir überprüfen, ob und welche Möglichkeiten zur Anlage eines Dachgartens für Sie vorhanden sind und falls ja, übernehmen wir gerne Ihren Auftrag für die Verwirklichung desselben.</p></div></div>
+			</div>
+
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close4').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Grünflächenpflege</h5>
+			<p>Wir betreuen nicht nur Privatgärten sondern...</p>
+			<!-- <button onclick="getElementById('close4').style.display='block'">mehr erfahren</button> -->
+		</div>
+			
+			<div class="box_text_hover" id="close4">
+				<p class="clo" href="" onclick="getElementById('close4').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="b"><div class="box_img"><img src="img/3.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5 style="text-align: left"><img src="img/vector.svg" alt="">Gepflegte Grünflächen sind attraktiver</h5>
+				<p>Wir betreuen nicht nur Privatgärten, sondern auch größere gemeinschaftliche Grünflächen in Wohnhausanlagen und Betrieben über den Jahresverlauf hindurch.<br><br>
+				Wenn schon kein eigener Garten zur Verfügung steht, so tragen die zu einer Wohnhausanlage gehörenden Grünflächen doch massiv zu einer Aufwertung der dort vorhandenen Lebensqualität bei. Über den Erholungswert entscheidet jedoch nicht nur die Größe und Gestaltung der Grünfläche, sondern auch deren jeweiliger Pflegezustand.<br><br>
+				Im Laufe des Jahres fallen daher umfangreiche Pflegearbeiten an.
+				Wir bieten eine professionelle, verlässliche Grünflächenbetreuung das ganze Jahr hindurch.
+				</p></div></div>
+				<div class="b"><div class="box_img"><img src="img/1_4.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5 style="text-align: left"><img src="img/vector.svg" alt="">Winterdienst</h5>
+				<p>Im Gegensatz zu den Pflanzen, die ihre verdiente Winterruhe halten, sind wir auch in der kalten Jahreszeit aktiv.<br><br>
+				Wir kümmern uns für unsere KundInnen darum, dass Wege und befahrbare bzw. begangene Flächen auf deren Grundstücken schnee- und eisfrei gehalten werden.<br><br>
+				Im Rahmen der Beauftragung mit dem Winterdienst stehen wir Tag und Nacht für die Schneeräumung auf den jeweiligen Flächen zur Verfügung.
+				</p></div></div>
+
+			</div>
+
+
+			<div class="box_offer wow zoomIn"  onclick="getElementById('close5').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Baumpflege</h5>
+			<p>Bäume sind eine wunderbare Bereicherung von...</p>
+			<!-- <button onclick="getElementById('close5').style.display='block'">mehr erfahren</button> -->
+			</div>
+
+			<div class="box_text_hover" id="close5">
+				<p class="clo" href="" onclick="getElementById('close5').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="b"><div class="box_img"><img src="img/1_5.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Baumgutachten</h5>
+				<p>Bäume sind eine wunderbare Bereicherung von Grünflächen und Gärten. Was wäre denn ein Garten ohne Hausbaum.<br><br>
+				Leider können große Bäume, die nahe an Gebäuden oder viel begangenen Orten stehen auch zu einer Gefahrenquelle werden.<br><br>
+				Wenn schon keine Personen betroffen sind, so kann ein heruntergestürzter Ast aber auch einen enormen finanziellen Schaden anrichten. <br><br>
+				Wir verfügen über die langjährige Erfahrung und das umfangreiche Know-how, um Ihnen die Frage nach der Baumsicherheit im Rahmen eines Baumgutachtens beantworten zu können.
+				</p></div></div>
+				<div class="b"><div class="box_img"><img src="img/1_7.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Baumschnitt</h5>
+				<p>Dem Baum- und Strauchschnitt kommt in der Gartenpflege eine besondere Bedeutung zu. Er kann dazu beitragen, die Pflanzen länger vital und blühfreudig zu halten bzw. beim Obst für einen langen und qualitativ hochwertigen Ertrag zu sorgen.<br><br>
+				Jedoch: Baum ist nicht gleich Baum und Strauch ist nicht gleich Strauch. Und so ist einiges Know-how und langjährige Erfahrung vonnöten, um jeder Pflanze die für sie passendee Schnitttechnik zum optimalen Schnittzeitpunkt zuteil werden zu lassen.<br><br>
+				Profitieren Sie von unserem Know-how und überlassen Sie uns den Schnitt!
+				</p></div></div>
+			</div>
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close6').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Pflanzenschutz</h5>
+			<p>Nur gesunde Pflanzen können ihre volle Schönheit...</p>
+			<!-- <button onclick="getElementById('close6').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close6">
+				<p class="clo" href="" onclick="getElementById('close6').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="box_img"><img src="img/1_6.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Pflanzenschutz</h5>
+				<p>Nur gesunde Pflanzen können ihre volle Schönheit und Einzigartigkeit entfalten. In der Natur sind sie jedoch zahlreichen Belastungen ausgesetzt.<br><br>
+				Leider wurden in letzter Zeit auch einige Schädlinge, eingeschleppt, die hier keine natürlichen Feinde haben, aber auch Pilze und Viruserkrankungen setzen der Vegetation zu.<br><br>
+				Um es gar nicht soweit kommen zu lassen, können schon im Vorfeld zahlreiche Maßnahmen wie u. a. eine optimale Düngung getroffen werden. Kommt es aber trotzdem einmal zu Anzeichen für einen Schädlingsbefall oder eine Erkrankung, muss das jeweils adäquate Pflanzenschutzmittel bzw. die Chemie gezielt zum Einsatz kommen. Da vor allem der Umgang mit chemischen Pflanzenschutzmitteln eher heikel ist und um nicht den gegenteiligen Effekt zu erzielen, ist hier höchste Vorsicht geboten. Die Anwendung dieser Präparate sollte daher eher Profis überlassen werden.
+				Wir stellen die richtige Diagnose und wenden den jeweils adäquaten Pflanzenschutz an.
+				</p></div></div>
+				
+			</div>
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close7').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Holzarbeiten</h5>
+			<p>Das Grün in den Städten wird immer rarer und..</p>
+			<!-- <button onclick="getElementById('close7').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close7">
+				<p class="clo" href="" onclick="getElementById('close7').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="box_img"><img src="img/1_8.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Holzarbeiten</h5>
+				<p>
+				</p></div></div>
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close8').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Pflasterung</h5>
+			<p>Das Grün in den Städten wird immer rarer und..</p>
+			<!-- <button onclick="getElementById('close8').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close8">
+				<p class="clo" href="" onclick="getElementById('close8').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="box_img"><img src="img/1_8_2.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Pflasterung</h5>
+				<p>
+				</p></div>
+			</div>
+
+			<div class="box_offer wow zoomIn" onclick="getElementById('close9').style.display='block'"><img src="img/logo2.svg" alt=""><h5>Bewässerung</h5>
+			<p>Das Grün in den Städten wird immer rarer und...</p>
+			<!-- <button onclick="getElementById('close9').style.display='block'">mehr erfahren</button> -->
+		</div>
+
+			<div class="box_text_hover" id="close9">
+				<p class="clo" href="" onclick="getElementById('close9').style.display='none'"><i class="fa fa-times" aria-hidden="true"></i></p>
+				<div class="box_img"><img src="img/1_9.jpg" alt=""></div>	
+				<div class="box_text">	
+				<h5><img src="img/vector.svg" alt="">Bewässerung</h5>
+				</p></div>
+			</div>
+
+		</nav>
+	</section>
+	<section class="uber" id="Über">
+		<h1 class="wow zoomIn">über uns</h1>
+		<img class="topimg" src="img/logo2.svg" alt="" class="animated zoomIn" >
+		<nav>	
+			
+			<!-- <h1><span>Welcome to</span> Real Garden</h1> -->
+			<h4 class="wow zoomIn">Gartengestaltung <br><span>Kirchknopf</span></h4>
+			<div class="text"><p>
+				Das Grün in den Städten wird immer rarer und die Abläufe in unserem Alltag werden immer rasanter. Ein eigener Garten (auch wenn er noch so klein ist) kann hier Abhilfe schaffen und durch eine adäquate Gestaltung zu einer Oase der Ruhe und der Erholung bzw. zu einem aktiven Bewegungsraum werden. <br><br>
+
+				Als bereits langjährig in der Gartenbranche tätiges Unternehmen haben wir es uns zur Aufgabe gemacht, aus den vorhandenen Grünflächen das Optimum für ihre jeweiligen NutzerInnen heraus zu holen.<br> <br>
+
+				Wir haben das Know-how um Sie bei der Pflege und der Gestaltung des für Ihre Bedürfnisse idealen Gartens zu unterstützen und zu beraten.
+			</p></div>
+		</nav>
+	</section>
+	<section class="portfolio" id="Portfolio">
+		<h1 class="wow zoomIn">Portfolio</h1>
+		<img class="topimg" src="img/logo2.svg" alt="" class="animated zoomIn" >
+
+		<nav>
+			
+			<!-- <p>gallery</p> -->
+			  <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__item">
+        <div><img src="img/gallery/1.jpg" alt=""></div>
+      </div>
+     <div class="slider__item">
+        <div><img src="img/gallery/2.jpg" alt=""></div>
+      </div>
+     <div class="slider__item">
+        <div><img src="img/gallery/3.jpg" alt=""></div>
+      </div>
+   
+      <div class="slider__item">
+        <div><img src="img/gallery/6.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/7.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/8.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/9.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/14.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/15.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/16.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/17.jpg" alt=""></div>
+      </div>
+    <!--   <div class="slider__item">
+        <div style="height: 580px;"><img src="img/gallery/18.jpg" alt=""></div>
+      </div> -->
+      <div class="slider__item">
+        <div><img src="img/gallery/19.jpg" alt=""></div>
+      </div>
+      <div class="slider__item">
+        <div><img src="img/gallery/20.jpg" alt=""></div>
+      </div>
+   <!--    <div class="slider__item">
+        <div style="height: 580px;"><img src="img/gallery/21.jpg" alt=""></div>
+      </div> -->
+    </div>
+    <a class="slider__control slider__control_left" href="#" role="button"></a>
+    <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+  </div>
+	</section>
+		<section class="uber" id="Impression">
+		<h1 class="wow zoomIn">Impressum</h1>
+		<img src="img/logo2.svg" alt="" class="topimg animated zoomIn">
+		<nav>	
+			
+			<!-- <h1><span>Welcome to</span> Real Garden</h1> -->
+			<h4 class="wow zoomIn">Gartengestaltung <br><span>Kirchknopf</span></h4>
+			<div class="text">
+
+				<div class="textleft">
+					Hersteller und Herausgeber
+					<br><br>
+					Firmenname: Gartengestaltung Rudolf Kirchknopf<br>
+					Inhaber: Rudolf Kirchknopf<br>
+					Adresse:
+					<br><br>
+					Tel.: + 43 1 749 28 29<br>
+					Fax.: + 43 1 749 28 29-30<br>
+					Email: rudolfkirchknopf@aon.at<br>
+					<br><br>
+					Firmenbuchnummer:<br>
+					UID-Nr: ATU 11087606<br>
+					Gerichtsstand: Wien<br>
+					<br><br>
+					Bankverbindung:<br>
+					Kontonummer:<br>
+					<br>
+					Selbstgewählte Unternehmensbezeichnung: Gartengestaltung Kirchknopf
+					Berufsgruppe: Garten- u. Grünflächengestalter, Landschaftsgärtner
+					Fachgruppe: Gärtner und Floristen
+				</div>
+				<div class="textright">
+					Der Inhalt dieser Website ist urheberrechtlich geschützt. Sämtliche Rechte, des Nachdrucks, der Vervielfältigung und auch der Übersetzung der Webseite bzw. des Inhalts oder Teilen daraus, sind der Firma Rudolf Kirchknopf vorbehalten. Es ist nicht erlaubt, den Inhalt dieser Seite in irgendeiner Form ohne schriftliche Zusage der Firma Rudolf Kirchknopf zu reproduzieren, verarbeiten, vervielfältigen bzw. zu verbreiten. <br><br>
+					Obwohl die Inhalte unserer Seiten mit größtmöglicher Sorgfalt erstellt worden sind, übernimmt die Firma Rudolf Kirchknopf keine Haftung für deren Aktualität, Vollständigkeit und Richtigkeit.
+					<br><br>
+					Auf unseren Seiten befinden sich auch Links zu externen Webseiten, auf deren Inhalt wir keinen Einfluss haben. Aufgrund dessen können wir für diese fremden Inhalte auch keinerlei Haftung übernehmen. Die Verantwortung für diese Inhalte obliegt dem jeweiligen Anbieter bzw. Betreiber.
+
+
+				</div>
+			</div>
+		</nav>
+	</section>
+
+	
+	<footer id="Kontakte">
+		<h1 class="wow zoomIn">Kontakt</h1>
+		<img src="img/logo2.svg" alt="" class="topimg wow zoomIn">
+		<nav>
+		
+				<h4 class="wow zoomIn">Gartengestaltung <span><br>Rudolf Kirchknopf</span></h4>
+				
+
+		
+			<div id="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.927035998231!2d16.456617515649477!3d48.15021187922445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476daa5898de3979%3A0x5022341187f26484!2zUmVpbW1pY2hsZ2Fzc2UgMywgMTExMCBXaWVuLCDQkNCy0YHRgtGA0LjRjw!5e0!3m2!1sru!2sua!4v1585588799473!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+
+		</nav>
+	
+	</footer>
+	<div class="footer_text">
+	
+			<ul>
+				<li>Reimmichlgasse 3, 1110 Wien</li>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i> rudolfkirchknopf@aon.at</li>
+				<li><i class="fa fa-phone-square" aria-hidden="true"></i> + 43 664 230 52 31</li>
+				<li><i class="fa fa-phone-square" aria-hidden="true"></i> + 01/749 28 29 (-30)</li>
+				
+			</ul>
+	</div>
+
+	<div id = "toTop" ><i class="fa fa-arrow-up" aria-hidden="true"></i></div>
+
+
+
+
+ <script src="gallery.js"> </script>
+
+
+</body>
+</html>
