@@ -344,7 +344,7 @@ section  .topimg
 }
 .box_text_hover:nth-child(20),.box_text_hover:nth-child(22),.box_text_hover:nth-child(24)
 {
-	margin: 20% auto;
+	margin: 35% auto;
 }
 .box_offer{cursor: pointer;}
 .box_text_hover h5 img
@@ -605,7 +605,7 @@ background: #1E4D25;
 .slider__item img
 {
 	width: 100%;
-	height: 100vh;
+	/*height: 120vh;*/
 	background-position: center center;
 	background-size: cover;
 }
