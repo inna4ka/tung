@@ -1162,7 +1162,10 @@ section h1
 		line-height: 1.5em
 	}
 
-	
+	section .topimg
+	{
+		width: 20%;
+	}
 	menu {height: 48px;}
 	#menu{display: none;}
 	.link{ float: right; margin-right: -10%}
