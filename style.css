@@ -34,8 +34,7 @@ figure img
 .link
 {
 	float: right;
-	padding-top: 10px;
-	margin-top: -18px;
+	padding-top: 10px
 }
 .link a
 {
@@ -1162,26 +1161,41 @@ section h1
 		font-size: 13px;
 		line-height: 1.5em
 	}
-/*	#Kontakte h1
-	{
-		font-size: 3em
-	}
-	footer h4
-	{
-		font-size: 1.5em
-	}*/
-	
+
 	
 	menu {height: 48px;}
 	#menu{display: none;}
-	.link 
+	.link{ float: right; margin-right: -10%}
+	.link a
 	{
-		
-		display: none;
+		color:  #218035;
+		margin: 1% 10px 0 15px;
+		text-decoration: none;
+		font-size: 130%;
+		letter-spacing: 1px;
+		position: relative;
+		display: inline-block;
+		float: left;
+		margin-top: 5px;
 	}
-
-
-
+	
+	/*.link a:nth-child(4){margin-right: -20px}*/
+	.link span
+	{
+		display: none;
+		position: absolute;
+		top: 95%;
+		right: 10%;
+		padding:0.5em;
+		background: #91C578;
+		z-index: 999;
+		width: auto;
+		font-size: 55%;
+		color: white;
+		text-align: center;
+		white-space: nowrap;
+	}
+	/*.link a:hover span{display: block;}*/
 
 	.box_service
 	{
@@ -1439,59 +1453,6 @@ background: #1E4D25;
 	transform: 2s all;
 }
 
-
-
-	
-#linkmob
-{
-	/*width: 50%;*/
-	height: 20px;
-	/*background: red;*/
-	position: absolute;
-	top: 3%;
-	right: 6%;
-	z-index: 999
-}
-#linkmob i
-{
-	margin-left: 2em;
-	font-size: 120%;
-	color: rgba(33, 150, 83, 1)
-}
-
-[data-title] {
-  /*outline: red dotted 1px; */
-  position: relative;
-  cursor: pointer;
-}
-
-[data-title]:hover::before {
-  content: attr(data-title);
-  position: absolute;
-  bottom: -26px;
-  right: 0;
-  display: inline-block;
-  padding: 3px 6px;
-  border-radius: 2px;
-  background: rgba(33, 150, 83, 1);
-  color: #fff;
-  font-size: 100%;
-  font-family: sans-serif;
-  white-space: nowrap;
-}
-[data-title]:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  right: 5px;
-  /*left: 8px;*/
-  display: inline-block;
-  color: #fff;
-  border: 8px solid transparent;	
-  border-bottom: 8px solid rgba(33, 150, 83, 1);
-}
-
 }
 
 #menu1{display: none;}
-.linkmob{display: none;}
