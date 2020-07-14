@@ -1287,6 +1287,7 @@ footer h4 {
    
 	}
 	details[open] summary:after {
+		
 	    content: "\f0d8";
 	    font-family: FontAwesome;
 	}
